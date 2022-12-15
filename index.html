@@ -3,9 +3,37 @@
   <head>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <title>Self-Care-Center</title>
   </head>
   <body>
-  
+    <header class="header">&#10024 Self Care Center &#10024</header>
+    <section class="question"> 
+      <h1>Which type of message?</h2>
+    </section>
+    <main class="main-page">
+      <section class="message-type-box">
+        <div class="radio-button-selection">
+          <div class="radio1"> 
+            <input class="radio-button1" type="radio" id="radio1"/>
+            <label class="radio-affirmation"
+            for="radio1">affirmation</label>
+          </div>
+          <div class="radio2">  
+            <input class="radio-button2" type="radio" id="radio2"/>
+            <label class="radio-mantra" for="radio2">mantra</label>
+          </div>
+        </div>
+        <div class="receive-message"> 
+          <button class="receive-message-button">Receive Message</button>
+        </div>
+      </section>
+      <section class="message-received hidden">
+        <p class="affirmation-message hidden" type="text" id="affirmation-message"></p>
+        <p class="mantra-message hidden" type="text" id="mantra-message"></p>
+        <img class="meditate-image hidden" src="assets/meditate.svg" alt="meditate">
+      </section>
+    </main>
     <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="data.js"></script>
   </body>
 </html>
