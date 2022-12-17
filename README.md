@@ -1,51 +1,30 @@
-# Self Care Center
-## Overview
-How can I care for myself? One way is with affirmations and mantras!
-Affirmations are thoughts of positive self-empowerment, meant to assert your self-worth.
-Mantras are repetive phrases that are repeated again and again during mindfulness practices. Your challenge is to build an app that helps users remind themselves of their inherent value!
-
-This Solo Challenge gives students and instructors the opportunity to get a pulse on where you are with the foundational concepts of Module 1 curriculum. Students should use this as an opportunity to challenge themselves and work completely independently. Google can (and probably should!) be used, but any other code base should not be referenced. Instructors will be able to use your work, both completion of functionality and code quality, to determine where you stand and if you are behind for this point in the module, provide supports to intervene.
-
-The spec for this project can be found [here](https://frontend.turing.io/projects/module-1/self-care-center.html). 
-
-## Learning Goals
-
-- Gain experience building an application that utilizes HTML, CSS and JavaScript
-- Write HTML and CSS to match a provided comp
-- Understand how to listen to and respond to user events
-- Individualize your programming skill set
-
-## Setup
-
-- Fork this project to your own Github account
-- Clone the repository to your local machine
-- `cd` into the project
-- Read this README thoroughly, then begin working!
-
-______________________________________________________  
-# README Template  
-Before turning this project in, erase this line and everything above it and fill in the info below.  
-______________________________________________________  
-
 # Self-Care Center 
 
 ### Abstract:
 [//]: <> (Briefly describe what you built and its features. What problem is the app solving? How does this application solve that problem?)
+***This app allows a user to receive a displayed message on the screen depening on whether or not they choose mantra or affirmation as their selection. The user is also allowed to like a message that will then store the message into an array. 
 
 ### Installation Instructions:
 [//]: <> (What steps does a person have to take to get your app cloned down and running?)
+***They can go to the repository link, https://github.com/dustingouner/self-care-center, and copy the SSH code into their terminal in order to clone down the file. 
 
 ### Preview of App:
 [//]: <> (Provide ONE gif or screenshot of your application - choose the "coolest" piece of functionality to show off.)
 
+https://user-images.githubusercontent.com/117230717/208265931-c2bc481b-6c78-4a1b-97a6-7f9bda070dd5.png
+
 ### Context:
 [//]: <> (Give some context for the project here. How long did you have to work on it? How far into the Turing program are you?)
+***This project was given to us on day 12 of the Turing program in Mod 1. I worked on the project for 5 days and a total of around 15 hours. 
 
 ### Contributors:
 [//]: <> (Who worked on this application? Link to their GitHubs.)
+***Dustin Gouner -  https://github.com/dustingouner)
 
 ### Learning Goals:
 [//]: <> (What were the learning goals of this project? What tech did you work with?)
+***Throughout the project I worked with JavaScript, HTML, and CSS to build the app and its functionality. Although, I was not able to complete all of iteration two, I found that by building a solid foundation in HTML helps to efficiently work through the css and JS file in order to have the app function and look as needed. 
 
 ### Wins + Challenges:
 [//]: <> (What are 2-3 wins you have from this project? What were some challenges you faced - and how did you get over them?)
+***My biggest win was when I learned how to properly use the dev tools in order to assist with styling so that my page would look similar to the project page we were given. It was a challenge in its self to know exactly what display, margins, font size, etc. was needed to memic the project page. Another win was when I ran into trouble pushing the liked messages into an array. By utilizing the console.log method I was able to pinpoint the problem and correct it. 
