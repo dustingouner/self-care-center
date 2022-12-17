@@ -10,8 +10,8 @@
 
 ### Preview of App:
 [//]: <> (Provide ONE gif or screenshot of your application - choose the "coolest" piece of functionality to show off.)
-
-![Screenshot 2022-12-17 at 2 01 58 PM](https://user-images.githubusercontent.com/117230717/208266273-8c6b13e3-44d7-4e04-ad0a-f9a9d9c93667.png)
+![Screenshot 2022-12-17 at 2 23 22 PM](https://user-images.githubusercontent.com/117230717/208266456-d4fe8d55-7892-4bb8-8b61-b20d549f80da.png)
+![Screenshot 2022-12-17 at 2 23 34 PM](https://user-images.githubusercontent.com/117230717/208266458-14a1570a-739a-47c3-8deb-6b44198d7fa0.png)
 
 
 
