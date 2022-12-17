@@ -10,47 +10,14 @@ white - #ffffff;
 black - #000000;
 */ 
 
-
-/* *::after {
-    box-sizing: border-box;
-    font-family: 'Quicksand', sans-serif;
-}  */
-
-
 body {
-background-image: linear-gradient(#134d71,#78a7c6, #f7e4bf);
-height: 100vh; 
+    background-image: linear-gradient(#134d71,#78a7c6, #f7e4bf);
+    height: 100vh; 
 }
 
 .hidden {
     display: none; 
 }
-
-/* ~~~~~~~~~~~~~CONTROLS~~~~~~~~~~~~~~~~  */
-
-/* .radio-button {
-    font-style: italic;
-    font-weight: lighter;
-    display: flex;
-    justify-content: flex-start;
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
-    background: #ffffff;
-    
-} */
-
-/* .receive-message-button {
-background-color: #134d71;
-display: flex;
-flex-direction: column;
-justify-content: flex-end;
-color: #ffffff;
-border-radius: 5px;
-} */
-
-
-/* ~~~~~~~~~~~~~~~HOME~~~~~~~~~~~~~~~~~~~~~ */
 
 .header {
     color: #ffffff;
@@ -72,7 +39,6 @@ border-radius: 5px;
     justify-content: center;
     margin-top: 75px;
     font-size: 15px;
-
 }
 
 .main-page {
@@ -82,31 +48,6 @@ border-radius: 5px;
     align-items: center;
     align-content: center;
 }
-
-
-
-/* .radio {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-start;
-    align-content: center;
-
-} */
-
-/* .radio-button-selection > .receive-message-button {
-    background-color: #134d71;
-    display: flex;
-    /* flex-direction: column; */
-    /* justify-content: center;
-    align-items: center;
-    /* align-content: center; */
-    /* color: #ffffff;
-    border-radius: 5px;
-        
-/* } */ 
-
-
 
 .message-type-box {
     display: flex;
@@ -126,11 +67,6 @@ border-radius: 5px;
     justify-content: space-around;
     align-content: center;
     margin-top: 10px;
-    /* padding: auto;
-    background: #ffffff;
-    border-radius: 5px;
-    width: 500px;
-    height: 75px */
 }
 
 .receive-message {
@@ -147,14 +83,12 @@ border-radius: 5px;
     color: #ffffff;
     border-radius: 5px;
     margin-top: 20px;
-
-        
 }
 
 .message-received {
     justify-content: center;
     display: flex;
-    flex-direction: center;
+    flex-direction: column;
     align-items: center;
     text-align: center;
     padding: auto;
@@ -163,10 +97,7 @@ border-radius: 5px;
     width: 700px;
     height: 150px;
     margin-top: 150px;
-    
-
 }
-
 
 .meditate-image {
     justify-content: center;
@@ -175,6 +106,35 @@ border-radius: 5px;
     width: 75px;
 }
 
+.favorite-button {
+    background: #134d71;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 15px;
+    margin: 10px;
+    padding: 10px 20px;
+}
+
+.saved-messages-btn {
+    background: #134d71;
+    color: #ffffff;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 15px;
+    padding: 10px 20px;
+}
+
+.saved-messages {
+    padding: 30px;
+}
+  
+.saved-messages-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 
 
 
