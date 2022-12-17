@@ -11,7 +11,9 @@
 ### Preview of App:
 [//]: <> (Provide ONE gif or screenshot of your application - choose the "coolest" piece of functionality to show off.)
 
-https://user-images.githubusercontent.com/117230717/208265931-c2bc481b-6c78-4a1b-97a6-7f9bda070dd5.png
+![Screenshot 2022-12-17 at 2 01 58 PM](https://user-images.githubusercontent.com/117230717/208266273-8c6b13e3-44d7-4e04-ad0a-f9a9d9c93667.png)
+
+
 
 ### Context:
 [//]: <> (Give some context for the project here. How long did you have to work on it? How far into the Turing program are you?)
