@@ -6,12 +6,12 @@
     <title>Self-Care-Center</title>
   </head>
   <body>
-    <header class="header hidden">&#10024 Self Care Center &#10024</header>
-    <section class="question hidden"> 
+    <header class="header">&#10024 Self Care Center &#10024</header>
+    <section class="question"> 
       <h1>Which type of message?</h2>
     </section>
-    <main class="main-page hidden">
-      <section class="message-type-box hidden">
+    <main class="main-page">
+      <section class="message-type-box">
         <div class="radio-button-selection">
           <div class="radio1"> 
             <input class="radio-button1" type="radio" name="radio" id="radio1Btn"/>
@@ -23,23 +23,28 @@
             <label class="radio-mantra" for="radio2">mantra</label>
           </div>
         </div>
-        <div class="receive-message hidden"> 
+        <div class="receive-message"> 
           <button class="receive-message-button">Receive Message</button>
         </div>
       </section>
-      <section class="message-received hidden">
-        <p class="affirmation-message hidden" type="text" id="message" value="text"></p>
-        <p class="mantra-message hidden" type="text" id="message" value="text"></p>
+      <section class="message-received">
+        <p class="affirmation-message" type="text" value="text"></p>
+        <p class="mantra-message hidden" type="text"  value="text"></p>
         <button class="favorite-button hidden" id="favorite">LIKE</button>
         <div class="buddah">
           <img class="meditate-image" id="buddah" src="assets/meditate.svg" alt="meditate">
         </div>
       </section>
-      <button class="saved-messages-btn" id="view-saved-button">SAVED MESSAGES</button>
-      <section class="view saved-messages hidden">
-        <section class="saved-messages-section"></section>
+      <button class="saved-messages-btn" id="saved-button">SAVED MESSAGES</button>
+      <section class="saved-messages hidden">
+        <div class="saved-box hidden">
+          <div class="home">
+            <button class="home-button">HOME</button>
+          </div>
+          <section class="saved-messages-section">
+          </section>
+        </div>
       </section>
-      
     </main>
     <script type="text/javascript" src="main.js"></script>
   </body>
