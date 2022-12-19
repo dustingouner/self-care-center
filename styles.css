@@ -1,6 +1,7 @@
 html{
     font-family: 'Quicksand', sans-serif;
     font-weight: bold; 
+     
 }
     /* COLORS
 light-yellow - #f7e4bf;
@@ -13,10 +14,11 @@ black - #000000;
 body {
     background-image: linear-gradient(#134d71,#78a7c6, #f7e4bf);
     height: 100vh; 
+    
 }
 
 .hidden {
-    display: none; 
+    display: none !important; 
 }
 
 .header {
@@ -125,15 +127,51 @@ body {
     padding: 10px 20px;
 }
 
-.saved-messages {
-    padding: 30px;
-}
-  
-.saved-messages-section {
+
+.favorites {
+    color: #000000;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: auto;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    background: #ffffff;
+    border-radius: 10px;
+    width: 630px;
+    height: 95px;
+    margin-top: 15px;
+}
+
+.home-button {
+    display: flex;
+    align-items: center;
+    background: #134d71;
+    color: #ffffff;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 15px;
+    padding: 10px 20px;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.delete-button {
+    display: flex;
+    align-items: center;
+    background: #134d71;
+    color: #ffffff;
+    border-radius: 5px;
+    margin-top: 0px;
+    font-size: 11Px;
+    padding: 5px 9px;
+    margin-bottom: 15px;
+    justify-content: space-between;
+
 }
 
 
