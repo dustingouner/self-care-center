@@ -5,16 +5,19 @@ var affirmationMessage = document.querySelector('.affirmation-message')
 var mantraMessage = document.querySelector('.mantra-message')
 var meditateImage = document.querySelector('.meditate-image')
 var messageReceived = document.querySelector('.message-received')
-var receiveMessage = document.querySelector(".receive-message")
-var buddah = document.querySelector(".buddah")
-var favoriteButton = document.getElementById("favorite")
-var saveMessageButton = document.getElementById('view-saved-button')
+var receiveMessage = document.querySelector('.receive-message')
+var buddah = document.querySelector('.buddah')
+var favoriteButton = document.getElementById('favorite')
+var saveMessageButton = document.querySelector('.saved-messages-btn')
 var mainPage = document.querySelector('.main-page')
 var messageTypeBox = document.querySelector('.message-type-box')
-var savedMessagesPage = document.querySelector('.saved-messages')
 var header = document.querySelector('.header')
 var question = document.querySelector('.question')
+var savedMessagesPage = document.querySelector('.saved-messages')
 var savedMessagesSetion = document.querySelector('.saved-messages-section')
+var savedBox = document.querySelector('.saved-box')
+var homeBtn = document.querySelector('.home-button')
+var deleteBtn = document.querySelector('.delete-button')
 
 var affirmations = [
     "I forgive myself and set myself free.",
@@ -51,19 +54,22 @@ var mantras = [
 ];
 
 var favoriteMessages = [];
-var affirmation = getRandomIndex(affirmations)
-var mantra = getRandomIndex(mantras)
 var likedMessage;
 
 receiveMessageButton.addEventListener('click', getMessage)
 favoriteButton.addEventListener('click', saveFavorites)
-saveMessageButton.addEventListener('click', showSavedMessagesPage)
+saveMessageButton.addEventListener('click', displaySavedMessages)
+homeBtn.addEventListener('click', showHome)
+deleteBtn.addEventListener('click', deleteMessage) 
+
 
 function getRandomIndex(array) {
     return Math.floor(Math.random() * array.length);
 }
 
 function getMessage() {
+    var affirmation = getRandomIndex(affirmations)
+    var mantra = getRandomIndex(mantras)
     if(radioButton1.checked) {
         buddah.classList.add('hidden');
         affirmationMessage.classList.remove('hidden');
@@ -83,26 +89,50 @@ function getMessage() {
 
 function saveFavorites() {
     favoriteMessages.push(likedMessage);
-    console.log(likedMessage);
     console.log(favoriteMessages);
 }
 
 function showSavedMessagesPage() {
-    displaySavedMessages();
-    mainPage.classList.add('hidden');
     question.classList.add('hidden');
+    header.classList.add('hidden')
     messageTypeBox.classList.add('hidden');
     messageReceived.classList.add('hidden');
     savedMessagesPage.classList.remove('hidden');
     savedMessagesSetion.classList.remove('hidden');
+    saveMessageButton.classList.add('hidden')
+    savedBox.classList.remove('hidden')
 }
 
 function displaySavedMessages() {
-    savedMessagesSetion.innerHTML = '';
-    for (var i = 0; i < likedMessage; i++) {
-        savedMessagesSetion.innerHTML +=
-        `<h2 class= "liked-message id="${likedMessage[i].id}"</h2>`
+    showSavedMessagesPage()
+    for (var i = 0; i < favoriteMessages.length; i++) {
+        savedMessagesSetion.innerHTML += 
+        `<p class="favorites">${favoriteMessages[i]}
+            <button class="delete-button" id="delete">DELETE</button>
+         </p>`
     }
+}
+
+// function deleteMessage() {
+//     // var thisMessage = is this working;
+//     // console.log(thisMessage)
+//     // for (var i = 0; i < favoriteMessages.length; i++) {
+//     //     if(thisMessage === favoriteMessages[i].id.toString()) {
+//     //         favoriteMessages.splice(i, 1);
+//     //     }
+//     // }
+//     // displaySavedMessages();
+// }
+
+function showHome() {
+    question.classList.remove('hidden');
+    header.classList.remove('hidden')
+    messageTypeBox.classList.remove('hidden');
+    messageReceived.classList.remove('hidden');
+    savedMessagesPage.classList.add('hidden');
+    savedMessagesSetion.classList.add('hidden');
+    saveMessageButton.classList.remove('hidden')
+    savedBox.classList.add('hidden')
 }
 
 
